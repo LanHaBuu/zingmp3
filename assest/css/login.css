@@ -1,0 +1,393 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../image/login.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-typing {
+    position: fixed;
+    top: 50px;
+    color: white;
+}
+
+.text-typing p {
+	color: #96ee1c;
+	font-weight: 700;
+	font-size: 70px;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 10s steps(30) infinite, blink 1s infinite;
+	text-shadow: 0 0 100px #96ee1c;
+}
+
+@keyframes typing {
+	0%,
+	100% {
+		width: 0%;
+	}
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		border-right: 10px solid transparent;
+	}
+	50% {
+		border-right: 10px solid #96ee1c;
+	}
+}
+
+.signIn {
+    width: 500px;
+    padding: 10px 20px;
+    background-color: #FAEBD7;
+}
+
+.signIn h2 {
+    color: #FF0045;
+    margin-bottom: 20px;
+}
+
+#signinName, #signinPassword {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+}
+
+.signinMessage {
+    margin-bottom: 10px;
+    color: red;
+}
+
+#remember {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.signIn__remember {
+    margin-bottom: 10px;
+}
+
+.signIn__remember span {
+    color: black;
+    position: relative;
+    top: -5px;
+}
+
+.signIn-button {
+    display: block;
+    margin-left: auto;
+    width: 120px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    background-color: #47CEBD;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+}
+
+.signIn__desc {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.signIn__desc-on span{
+    color: black;
+}
+
+.signIn__desc-on a,
+.signIn__desc-bot a{
+    color: #167BFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    
+}
+
+
+.modal.open {
+    display: flex;
+}
+
+.modal__container {
+    width: 500px;
+    max-width: calc(100% - 32px);
+    background-color: #FAEBD7;
+    margin: auto;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.modal__header {
+    display: flex;
+}
+
+.modal__header h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #FF0000;
+    padding: 20px 0;
+    flex: 1;
+}
+
+.modal__header i {
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#form-login {
+    padding: 10px;
+}
+
+.form-box{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-box label {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 400;
+    display: inline-block;
+    width: 100px;
+}
+
+/* .form-box:nth-child(4) label {
+    transform: translateY(15px)
+} */
+
+.form-box input {
+    outline: none;
+    width: 350px;
+    max-width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+.form-box #icon {
+    font-size: 15px;
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.form-box #message {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.form-box.invalid input {
+    border: 1px solid red;
+}
+
+.form-box.invalid #icon {
+    opacity: 1;
+    color: red;
+    position: absolute;
+    top: 10px
+}
+
+.form-box.invalid #icon.lastchild {
+   top: 22px
+}
+
+.form-box.invalid #message {
+    color: red;
+}
+
+.login {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: #1AC7B6;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    user-select: none;
+}
+
+.login:hover {
+    opacity: 0.8;
+}
+
+.info h5{
+    font-size: 16px;
+    color: var(--black-color);
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.info a{
+    color: var(--black-color);
+}
+
+.notify__form {
+    display: flex;
+    align-items: center;
+}
+
+.notify__form h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.notify__form input {
+    transform: translateY(-10px);
+}
+
+.formRegisterAccept {
+    width: 500px;
+    background-color: #FAEBD7;
+    padding: 20px 0;
+    margin: auto;
+    display: none;
+}
+
+.formRegisterAccept span,
+.formRegisterAccept p {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formRegisterAccept button {
+    font-size: 20px;
+    margin: 10px auto 0;
+    display: block;
+    padding: 8px 16px;
+    background-color: #47CEBD;
+}
+
+.forgotForm {
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #FAEBD7;
+    display: none;
+}
+
+.forgotForm .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgotForm .closeForgot {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.forgotForm h3 {
+    color: #FF0045;
+    font-size: 20px;
+}
+
+.forgotForm input {
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.forgotMessage {
+    margin-top: 6px;
+    color: #FF0045;
+    font-size: 20px;
+}
+
+.forgotForm button {
+    font-size: 18px;
+    background-color: #47CEBD;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}
+
+.showPass {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 46.1875em) {
+    .text-typing p{
+        font-size: 22px;
+    }
+    
+    .form-box {
+        margin-bottom: 0px;
+    }
+    
+    .form-box #icon {
+        transform: translateY(22px) translateX(-22px);
+    }
+}

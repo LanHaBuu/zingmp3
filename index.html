@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assest/css/login.css">
+</head>
+<body>
+    <div class="text-typing">
+        <p>Chúc các bạn ngày mới vui vẻ</p>
+    </div>
+    <div class="signIn">
+        <div class="signIn__header">
+            <h2>Đăng nhập</h2>
+        </div>
+        <input type="text" id="signinName" placeholder="Họ và tên">
+        <input type="password" id="signinPassword" placeholder="Mật khẩu">
+        <div class="signinMessage"></div>
+        <div class="signIn__remember">
+            <input type="checkbox" id="remember">
+            <span>Remember Me</span>
+        </div>
+        <a class="signIn-button">Login</a>
+        <div class="signIn__desc">
+            <div class="signIn__desc-on">
+                <span>Don't have an account?</span>
+                <a href="#">Signup</a>
+            </div>
+           <div class="signIn__desc-bot">
+                <a href="#">Fotgot your password</a>
+           </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <h2>Thông tin đăng ký</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal__body">
+                <form action="" id="form-login">
+                    <div class="form-box">
+                        <label for="fullname">Họ và tên</label>
+                         <input type="text" id="fullname" name="fullname" placeholder="VD:Hà Bửu Lân">
+                         <i id="icon" class="fa-solid fa-triangle-exclamation"></i>
+                        <div id="message"></div>
+                    </div>
+                    <div class="form-box">
+                        <label for="email" id="">Email</label>
+                        <input type="text" id="email" name="email" placeholder="lanhabuu@gmail.com">
+                        <i id="icon" class="fa-solid fa-triangle-exclamation"></i>
+                        <div id="message"></div>
+                    </div>
+                    <div class="form-box">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" id="password" name="password" placeholder="Mật khẩu phải trên 6 ký tự">
+                        <i id="icon" class="fa-solid fa-triangle-exclamation"></i>
+                        <div id="message"></div>
+                    </div>
+                    <div class="form-box">
+                        <label for="passwordConfirm">Nhập lại mật khẩu</label>
+                        <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Nhập lại mật khẩu">
+                        <i id="icon" class="fa-solid fa-triangle-exclamation lastchild"></i>
+                        <div id="message"></div>
+                    </div>
+ 
+                     <div class="notify__form">
+                         <input type="checkbox" id="checkbox" checked>
+                         <h5>Nhận thông báo về các tin tức & sự kiện mới nhất của chúng tôi. (Có thể hủy đăng ký bất cứ lúc nào)</h5>
+                         <div id="message"></div>
+                     </div>
+ 
+                    <a class="login">Đăng ký</a>
+                    <div class="info">
+                        <h5>Bằng cách đăng ký, bạn đồng ý với các <a href="#">điều khoản sử dụng</a> của chúng tôi</h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="formRegisterAccept">
+            <span>Bạn đã đăng ký tài khoản thành công</span>
+            <p>Vui lòng đăng nhập</p>
+            <button>OK</button>
+        </div>
+ 
+    </div>
+
+    <div class="forgotForm">
+        <div class="header">
+            <h3>Quên mật khẩu</h3>
+            <i class="closeForgot fa-solid fa-xmark"></i>
+        </div>
+        <input type="text" id="forgotName" placeholder="Họ và tên">
+        <input type="text" id="forgotEmail" placeholder="Email">
+        <p class="forgotMessage"></p>
+        <button>Xác nhận</button>
+        <p class="showPass"></p>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

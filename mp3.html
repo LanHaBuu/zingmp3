@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing Mp3</title>
+    <link rel="icon" href="/assest/image/icon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assest/css/responsive.css">
+    <link rel="stylesheet" href="assest/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header__nav">
+                <div class="header__icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="header__search">
+                    <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="header__search-input" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                    <div class="header__search-show">
+                        <h3>Đề xuất cho bạn</h3>
+                        <div class="header__show-block">
+                            <i class="header__search-show-icon fa-solid fa-magnifying-glass"></i>
+                            <p class="header__search-show-text">On my way</p>
+                        </div>
+                        <div class="header__show-block hide-tabletmobile">
+                            <i class="header__search-show-icon fa-solid fa-magnifying-glass"></i>
+                            <p class="header__search-show-text">karaoke</p>
+                        </div>
+                        <div class="header__show-block hide-tabletmobile">
+                            <i class="header__search-show-icon fa-solid fa-magnifying-glass"></i>
+                            <p class="header__search-show-text">#zingchart</p>
+                        </div>
+                        <div class="header__show-block hide-tabletmobile">
+                            <i class="header__search-show-icon fa-solid fa-magnifying-glass"></i>
+                            <p class="header__search-show-text">Tình bạn diệu kỳ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__info">
+                <ul class="header__info-list">
+                    <li class="header__info-item header__info-item-theme">
+                        <img src="assest/image/theme.png" alt="">
+                        <div class="header__info-color">
+                            <input type="range" class="inputColor" value="100" min="0" max="100">
+                            <ul class="header__color-list">
+                                <li class="header__color-item header__color-item--black"></li>
+                                <li class="header__color-item header__color-item--white"></li>
+                                <li class="header__color-item header__color-item--green"></li>
+                                <li class="header__color-item header__color-item--blue"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__info-item header__info-item-setting">
+                        <i class="fa-solid fa-gear"></i>
+                        <div class="header__setting-show">
+                            <ul class="header__setting-list">
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <span>Danh sách chặn</span>
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fa-brands fa-medium"></i>
+                                    <span>Chất lượng nhạc</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>Trình phát nhạc</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul class="header__setting-list header__setting-list-bot">
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Giới thiệu</span>
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-flag"></i>
+                                    <span>Góp ý</span>
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Liên hệ</span>
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fa-solid fa-rectangle-ad"></i>
+                                    <span>Quảng cáo</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__info-item header__info-item-login">
+                        <i class="header__info-user fa-solid fa-user"></i>
+                    </li>
+                    
+                </ul>
+            </div>
+        </header>
+    
+       <div class="sidebar">
+           <div class="sidebar__logo">
+               <a href="#" class="sidebar__logo-link">
+                    <img src="assest/image/main-logo.svg" alt="" class="sidebar__logo-large">
+                    <img src="assest/image/small-logo.svg" alt="" class="sidebar__logo-small">
+               </a>
+           </div>
+           <div class="sidebar__nav">
+               <ul class="sidebar__nav-list">
+                   <li class="sidebar__nav-item">
+                        <i class="bi bi-music-player"></i>
+                        <span>Cá nhân</span>
+                   </li>
+                   <li class="sidebar__nav-item">
+                        <i class="bi bi-vinyl"></i>
+                        <span>Music</span>
+                   </li>
+                   <li class="sidebar__nav-item">
+                        <i class="bi bi-music-note-list"></i>
+                        <span>#zingchart</span>
+                   </li>
+                   <li class="sidebar__nav-item">
+                        <i class="bi bi-soundwave"></i>
+                        <span>Radio</span>
+                        <span class="sidebar__nav-live">Live</span>
+                   </li>
+                   <li class="sidebar__nav-item">
+                        <i class="bi bi-journal-richtext"></i>
+                    <span>Theo dõi</span>
+                   </li>
+               </ul>
+    
+               <ul class="sidebar__subnav-list">
+                   <li class="sidebar__subnav-item">
+                        <i class="bi bi-music-note-beamed"></i>
+                        <span>Nhạc mới</span>
+                   </li>
+                    <li class="sidebar__subnav-item">
+                        <i class="bi bi-bar-chart-line-fill"></i>
+                        <span>Thể loại</span>
+                    </li>
+                    <li class="sidebar__subnav-item">
+                        <i class="bi bi-star"></i>
+                        <span>Top 100</span>
+                    </li>
+                    <li class="sidebar__subnav-item">
+                        <i class="bi bi-camera-video"></i>
+                        <span>MV</span>
+                    </li>
+                    <div class="sidebar__subnav-ads">
+                        <p>Nghe nhạc không quảng cáo cùng kho nhạc Vip</p>
+                        <button class="sidebar__subnav-btn">Mua vip</button>
+                    </div>
+                    <div class="library">
+                        <h3 class="library__heading">Thư viện</h3>
+                        <ul class="library__list">
+                            <li class="library__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <linearGradient id="0783s0j89a" x1="0%" x2="0%" y1="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#3CA2FF"></stop>
+                                            <stop offset="100%" stop-color="#008FFF"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="prx3tly02b" x1="21.839%" x2="21.839%" y1="43.679%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFF"></stop>
+                                            <stop offset="100%" stop-color="#FFF" stop-opacity=".9"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <g>
+                                                <path fill="url(#0783s0j89a)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -433) translate(21 433)"></path>
+                                                <path fill="url(#prx3tly02b)" d="M3.995 9.479c-.245.48-.245 1.11-.245 2.371v3.3c0 1.26 0 1.89.245 2.371.216.424.56.768.984.984.48.245 1.11.245 2.371.245h9.3c1.26 0 1.89 0 2.372-.245.423-.216.767-.56.983-.983.245-.482.245-1.112.245-2.372v-3.3c0-1.26 0-1.89-.245-2.371-.216-.424-.56-.768-.983-.984-.482-.245-1.112-.245-2.372-.245h-9.3c-1.26 0-1.89 0-2.371.245-.424.216-.768.56-.984.984zm8.567.571l.06.004.068.015.057.02.017.008c.556.27 1.067.623 1.516 1.046.075.07.148.142.22.217.172.18.166.464-.014.636-.18.172-.464.167-.636-.013-.061-.063-.123-.125-.187-.185-.202-.19-.42-.365-.65-.521v3.442c0 1.025-.832 1.856-1.857 1.856S9.3 15.744 9.3 14.719c0-1.025.831-1.856 1.856-1.856.35 0 .677.096.957.264V10.5c0-.249.201-.45.45-.45z" transform="translate(-21 -433) translate(21 433)"></path>
+                                                <path fill="#FFF" fill-opacity=".6" fill-rule="nonzero" d="M7.5 5.25c0-.414.336-.75.75-.75h7.5c.414 0 .75.336.75.75h-9z" transform="translate(-21 -433) translate(21 433)"></path>
+                                                <path fill="#FFF" fill-opacity=".9" fill-rule="nonzero" d="M6 6.75c0-.414.336-.75.75-.75h10.5c.414 0 .75.336.75.75H6z" transform="translate(-21 -433) translate(21 433)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>Bài hát</span>
+                            </li>
+                            <li class="library__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <linearGradient id="ghd4ngt38a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#9FD465"></stop>
+                                            <stop offset="100%" stop-color="#70B129"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <g>
+                                                <path fill="url(#ghd4ngt38a)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -467) translate(21 467)"></path>
+                                                <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 11.5h5m-5 3h5M6 17.5h12.5" transform="translate(-21 -467) translate(21 467)"></path>
+                                                <path fill="#FFF" d="M10.786 4.025c-.053-.016-.11-.025-.167-.025-.316 0-.572.262-.572.585v4.782c-.532-.44-1.21-.704-1.948-.704C6.387 8.663 5 10.082 5 11.831 5 13.581 6.387 15 8.099 15c1.711 0 3.099-1.419 3.099-3.169 0-.074-.003-.147-.007-.22l.001-6.04c.534.336 1.033.728 1.49 1.169.114.109.225.22.334.337.218.233.58.24.808.017.228-.223.235-.593.017-.826-.123-.131-.247-.257-.375-.38-.766-.738-1.64-1.355-2.589-1.826l-.091-.037z" transform="translate(-21 -467) translate(21 467)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>Playlist</span>
+                            </li>
+                            <li class="library__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <linearGradient id="v6mduhifwa" x1="50%" x2="50%" y1="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFD677"></stop>
+                                            <stop offset="100%" stop-color="#F7AA45"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="dkfkk30hhb" x1="21.205%" x2="21.205%" y1="43.042%" y2="100.632%">
+                                            <stop offset="0%" stop-color="#FFF"></stop>
+                                            <stop offset="100%" stop-color="#FFF" stop-opacity=".9"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <g>
+                                                <path fill="url(#v6mduhifwa)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -569) translate(21 569)"></path>
+                                                <path fill="url(#dkfkk30hhb)" d="M12 3.75c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25 8.25-3.694 8.25-8.25S16.556 3.75 12 3.75zm3.805 12.388c-.13.13-.301.195-.472.195-.17 0-.341-.065-.47-.195l-3.334-3.333c-.126-.125-.196-.294-.196-.472V8c0-.369.299-.667.667-.667.368 0 .667.298.667.667v4.057l3.138 3.138c.26.261.26.682 0 .943z" transform="translate(-21 -569) translate(21 569)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>Gần đây</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="sidebar__subnav-link">Tháng 1</a>
+                    <a href="#" class="sidebar__subnav-link">Nhạc Quốc Tế</a>
+                    <a href="#" class="sidebar__subnav-link">Sky ơi</a>
+                    <a href="#" class="sidebar__subnav-link">Nhạc Trẻ</a>
+                    <a href="#" class="sidebar__subnav-link">Nhạc Trữ Tình</a>
+                    <a href="#" class="sidebar__subnav-link">Top 10 MV</a>
+                    <a href="#" class="sidebar__subnav-link">Tháng 3</a>
+                    <a href="#" class="sidebar__subnav-link">Karaoke</a>
+               </ul>
+    
+           </div>
+    
+           <div class="sidebar__creatPlaylist">
+                <i class="bi bi-plus"></i>
+                <span>Tạo playlist mới</span>
+           </div>
+       </div>
+    
+       <div class="content">
+           <div class="content__song">
+                <header class="song__header">
+                    <h3 class="song__heading">Now playing:</h3>
+                    <p></p>
+                </header>
+                <div class="song__cd">
+                    <div class="song__cd-thumb">
+                        <img src="assest/image/phaohoa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="song__btn">
+                    <i class="song__btn--again fa-solid fa-rotate-right"></i>
+                    <i class="song__btn--back fa-solid fa-backward-step"></i>
+                    <div class="song__btn-change">
+                        <i class="song__btn--play fa-solid fa-play"></i>
+                        <i class="song__btn--pause fa-solid fa-pause"></i>
+                    </div>
+                    <i class="song__btn--next fa-solid fa-forward-step"></i>
+                    <i class="song__btn--random fa-solid fa-shuffle"></i>
+                    
+                </div>
+                <input class="song__progress" type="range" value="0" step="1" min="0" max="100">
+                <audio src="" class="song__audio"></audio>
+           </div>
+    
+           <div class="content__playlist">
+               
+           </div>
+       </div>
+    
+       <div id="toast">
+        
+       </div>
+    
+       <div class="content__showplaylist">
+           <div class="content__playlist-heading">
+                <h2>Playlist</h2>
+                <i class="bi bi-chevron-right"></i>
+                <div class="playlist__heading-control">
+                    <i class="playlist__control--left bi bi-chevron-left"></i>
+                    <i class="playlist__control--right bi bi-chevron-right"></i>
+                </div>
+           </div>
+           <ul class="content__playlist-list">
+                <li class="content__playlit-item creatPlaylist">
+                    <div class="playlist__content">
+                        <i class="playlist__conten-header bi bi-plus-lg"></i>
+                        <p class="playlist__conten-content">Tạo playlist mới</p>
+                    </div>
+                </li>
+            
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist1.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">V-Pop: The A-List</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+               </li>
+    
+               <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist2.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Nhạc hot đám cưới</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+           
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist3.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Nhạc Quốc tế</p>
+                        <p class="playlist__conten-content">Tháng 6</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist4.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bản hit của Rap Việt</p>
+                        <p class="playlist__conten-content">Rap Viet</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist5.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Top 100 nhạc trẻ</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist6.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bản nhạc DJ</p>
+                        <p class="playlist__conten-content">DJ</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist7.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Nhạc Hoa Lời Việt</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist8.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bài hát hit của Đen Vâu</p>
+                        <p class="playlist__conten-content">Đen Vâu</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist9.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bài hát của Sơn Tùng-MTP</p>
+                        <p class="playlist__conten-content">Sơn Tùng-MTP</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist10.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">VPop: Vol 3</p>
+                        <p class="playlist__conten-content">Zing</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist11.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Nhạc châu Âu</p>
+                        <p class="playlist__conten-content">Zing</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist12.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Nhạc Lofi</p>
+                        <p class="playlist__conten-content">Mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist13.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bài hát của BinZ và SooBin Hoàng Sơn</p>
+                        <p class="playlist__conten-content">Binz ft. SooBin Hoàng Sơn</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist14.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Top 10 bài hát nghe nhiều nhất tháng 3</p>
+                        <p class="playlist__conten-content">Zing</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist15.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bản nhạc buồn của Mr.Siro</p>
+                        <p class="playlist__conten-content">Mr.Siro</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist16.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Top EDM năm 2018</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist17.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Mix Quốc tế</p>
+                        <p class="playlist__conten-content">mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist18.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Top 10 bài hát thịnh hành của HKT</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+    
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist19.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Mix Việt Nam</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist20.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">V-Pop: Top 10 thịnh hành tháng 3</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+                <li class="content__playlit-item">
+                    <img src="assest/image/playlist/playlist21.jpg" alt="" class="playlist-img">
+                    <div class="playlist__content">
+                        <p class="playlist__conten-header">Những bản nhạc dance</p>
+                        <p class="playlist__conten-content">Zing mp3</p>
+                    </div>
+                </li>  
+           </ul>
+       </div>
+
+       
+       <div class="content__showplaylist">
+        <div class="content__playlist-heading">
+             <h2>Album</h2>
+             <i class="bi bi-chevron-right"></i>
+             <div class="playlist__heading-control">
+                 <i class="album__control--left bi bi-chevron-left"></i>
+                 <i class="album__control--right bi bi-chevron-right"></i>
+             </div>
+        </div>
+        <ul class="content__album-list">
+             <li class="content__album-item">
+                 <img src="assest/image/albums/album1.jpg" alt="" class="playlist-img">
+                 <div class="playlist__content">
+                     <p class="playlist__conten-header">Golden Hour</p>
+                 </div>
+            </li>
+
+            <li class="content__album-item">
+                <img src="assest/image/albums/album2.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Boycold (Mini Album)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album3.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Red(Taylor Swift)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album4.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">
+                        Người Yêu Cũ (Gửi Cho Anh 2) (Mini Album)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album5.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Querencia (Mini Album)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album6.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">
+                        Justice (Mini Album)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album7.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Teenage Dream(Katy Perry)</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album8.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">The Off Season</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album9.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">The Album</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album10.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">
+                        Random Access Memories</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album11.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Map of the Soul: 7</p>
+                    
+                </div>
+           </li>
+           
+           <li class="content__album-item">
+                <img src="assest/image/albums/album12.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Chromatica</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album13.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">My Turn</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album14.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Meet the Woo 2</p>
+                    
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album15.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Lemonade</p>               
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album15.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">Lemonade</p>               
+                </div>
+           </li>
+
+           <li class="content__album-item">
+                <img src="assest/image/albums/album16.jpg" alt="" class="playlist-img">
+                <div class="playlist__content">
+                    <p class="playlist__conten-header">GDucky</p>               
+                </div>
+            </li>
+        </ul>
+    </div>
+      
+    <div class="content__showplaylist">
+        <div class="content__playlist-heading">
+             <h2>MV</h2>
+             <i class="bi bi-chevron-right"></i>
+             <div class="playlist__heading-control">
+                 <i class="mv__control--left bi bi-chevron-left"></i>
+                 <i class="mv__control--right bi bi-chevron-right"></i>
+             </div>
+        </div>
+        <ul class="content__mv-list">
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv1.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist1.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Một Bước Yêu Vạn Dặm Đau</p>
+                        <p class="mv__desc-artist">Mr.siro</p>
+                    </div>
+                </div>
+                <div class="mv__time">11:54</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv2.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist2.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Simple Love</p>
+                        <p class="mv__desc-artist">Obito, Seachains, Davis</p>
+                    </div>
+                </div>
+                <div class="mv__time">03:54</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv3.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist3.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Lời Yêu Ngây Dại</p>
+                        <p class="mv__desc-artist">Kha</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:33</div>
+            </li>
+         
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv4.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist4.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">24H</p>
+                        <p class="mv__desc-artist">LyLy, Magazine</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:18</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv5.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist5.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Nước Mắt Em Lau Bằng Tình Yêu Mới</p>
+                        <p class="mv__desc-artist">Da LAB, Tóc Tiên</p>
+                    </div>
+                </div>
+                <div class="mv__time">05:45</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv6.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist6.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Yêu Đơn Phương</p>
+                        <p class="mv__desc-artist">OnlyC, Karik</p>
+                    </div>
+                </div>
+                <div class="mv__time">05:02</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv7.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist7.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Phía Sau Em</p>
+                        <p class="mv__desc-artist">Kay Trần, Binz</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:06</div>
+            </li>
+            
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv8.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist8.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Mình Yêu nhau đi</p>
+                        <p class="mv__desc-artist">
+                            Bích Phương</p>
+                    </div>
+                </div>
+                <div class="mv__time">03:52</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv9.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist9.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Đừng Về Trễ (Acoustic Version)</p>
+                        <p class="mv__desc-artist">
+                            Sơn Tùng MTP</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:41</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv10.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist10.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Hơn Cả Yêu</p>
+                        <p class="mv__desc-artist">Đức Phúc</p>
+                    </div>
+                </div>
+                <div class="mv__time">05:43</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv11.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist11.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Vì Yêu Cứ Đâm Đầu</p>
+                        <p class="mv__desc-artist">MIN, Đen, JustaTee</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:01</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv12.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist12.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Sao Anh Chưa Về Nhà</p>
+                        <p class="mv__desc-artist">Amee, Ricky Star</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:36</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv13.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist13.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Bigcityboi</p>
+                        <p class="mv__desc-artist">Binz, Tourliver</p>
+                    </div>
+                </div>
+                <div class="mv__time">04:18</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv14.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist14.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Em Không Sai Chúng Ta Sai</p>
+                        <p class="mv__desc-artist">ERiK</p>
+                    </div>
+                </div>
+                <div class="mv__time">06:20</div>
+            </li>
+
+            <li class="content__mv-item">
+                <img src="./assest/image/mv/mv16.jpg" alt="" class="playlist-img">
+                <div class="mv__content">
+                    <img src="./assest/image/mv-artist/artist15.jpg" alt="" class="small">
+                    <div class="mv__desc">
+                        <p class="mv__desc-name">Có Không Giữ Mất Đừng Tìm</p>
+                        <p class="mv__desc-artist">Trúc Nhân</p>
+                    </div>
+                </div>
+                <div class="mv__time">08:32</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content__showplaylist">
+        <div class="content__playlist-heading">
+             <h2>Nghệ Sĩ</h2>
+             <i class="bi bi-chevron-right"></i>
+             <div class="playlist__heading-control">
+                 <i class="artist__control--left bi bi-chevron-left"></i>
+                 <i class="artist__control--right bi bi-chevron-right"></i>
+             </div>
+        </div>
+        <ul class="content__artist-list">
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist1.jpg" alt="" class="artist-img">
+                <p class="artistName">Binz</p>
+                <p class="followNumber">254K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist2.jpg" alt="" class="artist-img">
+                <p class="artistName">Phương Ly</p>
+                <p class="followNumber">67K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist3.jpg" alt="" class="artist-img">
+                <p class="artistName">AMEE</p>
+                <p class="followNumber">317K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist4.jpg" alt="" class="artist-img">
+                <p class="artistName">MCK</p>
+                <p class="followNumber">54K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist5.jpg" alt="" class="artist-img">
+                <p class="artistName">Sơn Tùng MTP</p>
+                <p class="followNumber">2.7M quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist6.jpg" alt="" class="artist-img">
+                <p class="artistName">Mr.Siro</p>
+                <p class="followNumber">754K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist7.jpg" alt="" class="artist-img">
+                <p class="artistName">Han Sara</p>
+                <p class="followNumber">144K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist8.jpg" alt="" class="artist-img">
+                <p class="artistName">Bích Phương</p>
+                <p class="followNumber">368K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist9.jpg" alt="" class="artist-img">
+                <p class="artistName">Soobin Hoàng Sơn</p>
+                <p class="followNumber">434K quan tâm</p>
+            </li>
+
+            <li class="content__artist-item">
+                <img src="./assest/image/artist/artist10.jpg" alt="" class="artist-img">
+                <p class="artistName">Chi Dân</p>
+                <p class="followNumber">254K quan tâm</p>
+            </li>
+        
+        </ul>
+    </div>
+    </div>
+
+
+   <script src="main.js"></script>
+   <script src="toast.js"></script>
+   <script src="slide.js"></script>
+</body>
+</html>
